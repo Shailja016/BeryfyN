@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { ArrowRight, Code, Rocket, Zap } from 'lucide-react'
+import { ArrowRight, Code, Rocket, Zap, Shield, Sparkles } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const Hero = () => {
@@ -99,6 +99,85 @@ const Hero = () => {
     </section>
   )
 }
+const WhyChooseUs = () => {
+  const features = [
+    {
+      title: "Code-First",
+      description: "Clean, scalable architecture built for performance",
+      icon: <Code size={28} />,
+    },
+    {
+      title: "Lightning Speed",
+      description: "Optimized for blazing-fast load times",
+      icon: <Zap size={28} />,
+    },
+    {
+      title: "Secure",
+      description: "Enterprise-grade security standards",
+      icon: <Shield size={28} />,
+    },
+    {
+      title: "Modern Stack",
+      description: "Latest tech, frameworks & best practices",
+      icon: <Sparkles size={28} />,
+    },
+  ]
+
+  return (
+    <section className="relative py-32 px-6 overflow-hidden bg-brand-midnight">
+      {/* Background Glow */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(0,217,255,0.08),transparent_40%)] pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto relative z-10">
+        {/* Heading */}
+        <div className="mb-20">
+          <h2 className="text-6xl md:text-7xl font-black tracking-tight leading-none mb-6">
+            Why{" "}
+            <span className="text-gradient-triple">
+              Choose
+            </span>{" "}
+            Us
+          </h2>
+
+          <p className="text-xl text-brand-ivory/50 font-light">
+            Build different. Code better. Ship faster.
+          </p>
+        </div>
+
+        {/* Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {features.map((feature, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ y: -8 }}
+              transition={{ duration: 0.3 }}
+              className="relative overflow-hidden rounded-[2rem] border border-brand-cyan/10 bg-gradient-to-b from-[#0b1220] to-[#091018] p-10 min-h-[320px] group"
+            >
+              {/* Glow */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-[radial-gradient(circle_at_top,rgba(0,217,255,0.08),transparent_60%)]" />
+
+              {/* Icon */}
+              <div className="relative z-10 w-20 h-20 rounded-3xl bg-brand-cyan/10 flex items-center justify-center text-brand-cyan mb-10">
+                {feature.icon}
+              </div>
+
+              {/* Content */}
+              <div className="relative z-10">
+                <h3 className="text-3xl font-bold text-white mb-6 tracking-tight">
+                  {feature.title}
+                </h3>
+
+                <p className="text-brand-ivory/50 text-lg leading-relaxed font-light">
+                  {feature.description}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
 
 const ServicesSection = () => {
   const services = [
@@ -163,6 +242,45 @@ const ServicesSection = () => {
     </section>
   )
 }
+const ReadyToBuild = () => {
+  return (
+    <section className="relative px-6 pb-32 bg-brand-midnight overflow-hidden">
+      {/* Background Glow */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,217,255,0.08),transparent_45%)] pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto relative">
+        <div className="relative overflow-hidden rounded-[2.5rem] border border-brand-cyan/10 bg-gradient-to-br from-[#132238] via-[#101827] to-[#0a1120] px-8 py-24 md:py-32 text-center">
+
+          {/* Blur Effects */}
+          <div className="absolute top-0 left-0 w-72 h-72 bg-brand-cyan/10 blur-[120px]" />
+          <div className="absolute bottom-0 right-0 w-72 h-72 bg-brand-lavender/10 blur-[120px]" />
+
+          <div className="relative z-10">
+            <h2 className="text-5xl md:text-8xl font-black tracking-tight leading-none mb-8">
+              Ready{" "}
+              <span className="text-gradient-triple">
+                to
+              </span>{" "}
+              Build?
+            </h2>
+
+            <p className="text-lg md:text-2xl text-brand-ivory/40 mb-14 font-light">
+              Let's turn your vision into a digital masterpiece.
+            </p>
+
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-4 px-10 py-5 rounded-full bg-brand-cyan text-brand-midnight text-lg md:text-xl font-bold shadow-cyan-glow hover:scale-105 transition-all duration-300"
+            >
+              Start Your Project
+              <ArrowRight size={26} />
+            </Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
 
 const Home = () => {
   return (
@@ -173,7 +291,9 @@ const Home = () => {
       transition={{ duration: 0.5 }}
     >
       <Hero />
+      <WhyChooseUs />
       <ServicesSection />
+      <ReadyToBuild />
     </motion.div>
   )
 }

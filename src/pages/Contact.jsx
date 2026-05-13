@@ -26,13 +26,18 @@ const Contact = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          name: formData.fullName,
-          email: formData.email,
-          whatsapp: formData.whatsapp,
-          service: formData.service,
-          message: formData.requirements,
-          _subject: `New Beryfy Inquiry from ${formData.fullName}`,
-        }),
+        name: formData.fullName,
+        email: formData.email,
+        whatsapp: formData.whatsapp,
+        service: formData.service,
+        message: formData.requirements,
+
+  // Email Subject
+        _subject: `${formData.fullName} sent a project inquiry`,
+
+  // Reply directly to user's email
+        _replyto: formData.email,
+}),
       });
 
       if (response.ok) {
