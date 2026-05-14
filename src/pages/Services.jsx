@@ -123,12 +123,9 @@ const Services = () => {
             </span>
           </div>
 
-          <h1 className="text-6xl md:text-[7rem] font-black tracking-tighter leading-[0.9]">
-            OUR <br />
-
-            <span className="text-gradient-triple text-glow-cyan">
-              SERVICES
-            </span>
+          <h1 className="text-6xl md:text-[7rem] font-black tracking-tighter leading-[0.9] flex flex-col items-center">
+            <span className="-translate-x-8 md:-translate-x-16">OUR</span>
+            <span className="text-gradient-triple text-glow-cyan translate-x-8 md:translate-x-0">SERVICES</span>
           </h1>
 
           <p className="mt-8 text-lg md:text-2xl text-brand-ivory/50 font-light">
@@ -249,11 +246,9 @@ const Services = () => {
 
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-black tracking-tight mb-5">
-              Tech{' '}
-              <span className="text-gradient-triple">
-                Stack
-              </span>
+            <h2 className="text-5xl md:text-6xl font-black tracking-tight mb-5 flex flex-col items-center">
+              <span className="-translate-x-4 md:-translate-x-0">Tech</span>
+              <span className="text-gradient-triple translate-x-4 md:translate-x-0">Stack</span>
             </h2>
 
             <p className="text-lg text-brand-ivory/50">
@@ -289,8 +284,9 @@ const Services = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(0,217,255,0.06),transparent_40%)]" />
 
             <div className="relative z-10">
-              <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-6">
-                Let’s Build Something Epic
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-6 flex flex-col items-center">
+                <span className="-translate-x-6 md:-translate-x-0">Let’s Build</span>
+                <span className="translate-x-6 md:translate-x-0">Something Epic</span>
               </h2>
 
               <p className="text-lg text-brand-ivory/50 mb-10">

@@ -21,9 +21,9 @@ const Hero = () => {
             Empowering Gen-Z Startups
           </div>
           
-          <h1 className="text-6xl md:text-8xl font-bold mb-8 tracking-tighter leading-[0.9]">
-            BUILD BEYOND <br /> 
-            <span className="text-gradient-triple text-glow-cyan uppercase">Limits</span>
+          <h1 className="text-6xl md:text-8xl font-bold mb-8 tracking-tighter leading-[0.9] flex flex-col text-white">
+            <span className="-translate-x-4 md:-translate-x-8">BUILD BEYOND</span>
+            <span className="text-gradient-triple text-glow-cyan uppercase translate-x-4 md:translate-x-2">Limits</span>
           </h1>
           
           <p className="text-lg md:text-xl text-brand-ivory/60 mb-10 max-w-lg font-light leading-relaxed">
@@ -131,12 +131,9 @@ const WhyChooseUs = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Heading */}
         <div className="mb-20">
-          <h2 className="text-6xl md:text-7xl font-black tracking-tight leading-none mb-6">
-            Why{" "}
-            <span className="text-gradient-triple">
-              Choose
-            </span>{" "}
-            Us
+          <h2 className="text-6xl md:text-7xl font-black tracking-tight leading-none mb-6 text-white">
+            <span className="inline-block -translate-x-2 md:-translate-x-4">Why</span>
+            <span className="text-gradient-triple inline-block translate-x-2 md:translate-x-0 ml-0">Choose Us</span>
           </h2>
 
           <p className="text-xl text-brand-ivory/50 font-light">

@@ -45,7 +45,7 @@ const Navbar = () => {
         <img
           src={logo}
           alt="Beryfy Logo"
-          className="h-12 md:h-14 w-auto object-contain"
+          className="h-12 md:h-14 w-auto object-contain transition-transform group-hover:rotate-45"
           />
 
           <span

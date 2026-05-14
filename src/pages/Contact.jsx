@@ -117,10 +117,10 @@ const Contact = () => {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.1 }}
-            className="text-6xl md:text-8xl font-bold mb-8 tracking-tighter leading-[0.9]"
+            className="text-6xl md:text-8xl font-bold mb-8 tracking-tighter leading-[0.9] flex flex-col items-center text-white"
           >
-            GET IN <br /> 
-            <span className="text-gradient-triple text-glow-cyan uppercase">TOUCH</span>
+            <span className="-translate-x-4 md:-translate-x-0">GET IN</span>
+            <span className="text-gradient-triple text-glow-cyan uppercase translate-x-8 md:translate-x-0">TOUCH</span>
           </motion.h1>
           
           <motion.p 
@@ -158,8 +158,11 @@ const Contact = () => {
 
         <div className="max-w-4xl mx-auto mb-32">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-4">Start a <span className="text-gradient-triple uppercase">Project</span></h2>
-            <p className="text-brand-ivory/40">Fill out the form and we'll respond within 24 hours</p>
+            <h2 className="text-5xl font-bold mb-4 flex flex-col items-center text-white">
+              <span>Start a</span>
+              <span className="text-gradient-triple uppercase -translate-x-15">Project</span>
+            </h2>
+            <p className="text-brand-ivory/40 text-center">Fill out the form and we'll respond within 24 hours</p>
           </div>
 
           <motion.div 

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import logo from '../assets/beryfy_logo.svg'
 
 const Footer = () => {
   return (
@@ -16,10 +17,12 @@ const Footer = () => {
           <div className="md:col-span-6">
             <div className="flex items-center gap-3 mb-8 group">
               <Link to="/" className="flex items-center gap-3">
-                {/* Logo: 40x40px rounded square, Gradient #00D9FF -> #B794F6 */}
-                <div className="w-10 h-10 bg-gradient-to-br from-[#00D9FF] to-[#B794F6] rounded-xl flex items-center justify-center transition-transform group-hover:rotate-12 shadow-cyan-glow">
-                  <span className="text-[#0A0F1A] font-bold text-lg">{`>_`}</span>
-                </div>
+                {/* Logo using beryfy_logo.svg */}
+                <img 
+                  src={logo} 
+                  alt="Beryfy Logo" 
+                  className="w-10 h-10 transition-transform group-hover:rotate-45"
+                />
                 {/* Brand Name: Triple gradient #00D9FF -> #0FF -> #B794F6 */}
                 <span className="text-2xl font-bold tracking-tighter text-gradient-triple uppercase" style={{ fontFamily: 'Clash Display, sans-serif' }}>
                   BERYFY

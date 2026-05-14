@@ -121,7 +121,10 @@ const Works = () => {
               <span className="w-1.5 h-1.5 rounded-full bg-brand-cyan shadow-cyan-glow animate-pulse" />
               Portfolio
             </motion.div>
-            <h1 className="text-6xl md:text-8xl font-bold mb-8 tracking-tighter">Selected <span className="text-glow-cyan">Works</span></h1>
+            <h1 className="text-6xl md:text-8xl font-bold mb-8 tracking-tighter flex flex-col text-white">
+              <span className="-translate-x-4 md:-translate-x-8">Selected</span>
+              <span className="text-glow-cyan translate-x-4 md:translate-x-8">Works</span>
+            </h1>
             <p className="text-lg md:text-xl text-brand-ivory/60 font-light max-w-lg">
               A collection of digital products we've crafted for <span className="text-brand-cyan font-medium">ambitious brands</span> across the globe.
             </p>

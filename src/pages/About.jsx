@@ -24,12 +24,12 @@ const About = () => {
   const team = [
     {
       name: "Shailja Shukla",
-      role: "Founder & Creative Director",
+      role: "Creative Director",
       bio: "Visionary behind Beryfy, ensuring every project meets the highest standards of modern design and startup excellence."
     },
     {
       name: "Ankit Kumar",
-      role: "Lead Developer",
+      role: "Founder & Lead Developer ",
       bio: "Expert in building scalable architectures and high-performance applications that drive business growth."
     },
     {
@@ -64,7 +64,10 @@ const About = () => {
               <span className="w-1.5 h-1.5 rounded-full bg-brand-cyan shadow-cyan-glow animate-pulse" />
               Our Story
             </motion.div>
-            <h1 className="text-6xl md:text-8xl font-bold mb-8 tracking-tighter">Who We <span className="text-glow-cyan">Are</span></h1>
+            <h1 className="text-6xl md:text-8xl font-bold mb-8 tracking-tighter text-white">
+              <span className="inline-block -translate-x-2 md:-translate-x-4">Who We</span>
+              <span className="text-glow-cyan inline-block translate-x-2 md:translate-x-4 ml-4">Are</span>
+            </h1>
             <p className="text-lg md:text-xl text-brand-ivory/60 leading-relaxed mb-12 font-light">
               Beryfy is a modern tech brand founded on the principles of <span className="text-brand-cyan font-medium">innovation, creativity, and technical excellence</span>. Based in India, we've grown into a premium partner for startups globally.
             </p>
@@ -121,7 +124,10 @@ const About = () => {
         {/* Team Section */}
         <div>
           <div className="text-center mb-24">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6">The <span className="text-glow-cyan">Core Team</span></h2>
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 flex flex-col items-center">
+              <span className="-translate-x-4 md:-translate-x-8">The</span>
+              <span className="text-glow-cyan translate-x-4 md:translate-x-8">Core Team</span>
+            </h2>
             <p className="text-brand-ivory/40 max-w-2xl mx-auto font-light">
               Meet the creative minds behind your favorite digital products.
             </p>
