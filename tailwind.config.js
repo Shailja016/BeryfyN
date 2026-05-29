@@ -16,6 +16,7 @@ export default {
           lavender: "#B794F6",
           pink: "#FF10F0",
           ivory: "#BDC4D4",
+          buttercream: "#FDFBF7",
         },
       },
       backgroundImage: {
